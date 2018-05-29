@@ -3,28 +3,69 @@
 <title>
 Моя домашняя страница
 </title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&amp;subset=cyrillic" rel="stylesheet"> 
 <style>
+body, html {
+paddng: 0px;
+margin: 0px;
+}
 body {
-background: #200122;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 color: white;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 22px;
+font-weight: 100;
+}
+
+#top { 
+background-image: url(1.jpeg);
+background-size: cover;
+background-position: top;
+height: 550px;
+position: relative;
+filter: brightness(.3) grayscale(1);
+}
+#top2{
+position: absolute;
+display: block;
+top: 450px;
+left: 0px;
+right: 0px;
+font-size: 50px;
+text-align: center;
+font-weight: 100;
+filter: brightness(2);
+}
+.content {
+padding: 10px;
+}
+.Photos {
+height: 250px;
+background-image: url(1.jpeg);
+background-repeat: repeat-x;
+background-size: contain;
+}
+a, a:visited {
+margin: 5px;
+background: white;
+padding: 3px;
+color: black;
+border-radius: 6px;
 }
 </style>
 </head>
-<body TEXT="000000"
-background=2.jpg
-ling="#0000FF"
-vlink="#FF0000"
-alink="#000088">
-<center><h1>
-<font color="red" size="12">
-Приветствую на моей домашней странице!</font>
-</h1></center>
+<body>
+<div id="top"></div>
+<span id="top2">Приветствую на моей домашней странице!</span>
+<div class="content">
 <center><h2>
 Надеюсь, Вам будет не скучно...
 </h2></center>
+</div>
+<div class="content" style="background:rgba(0, 0, 0, .2)">
 Позвольте представиться: меня зовут
 <b><i>
 Алеся Трунова
@@ -33,18 +74,17 @@ alink="#000088">
 </b> Терпеть не могу
 <b> РЭП и хомячков.
 </b>
-<p><center> Для тех, кто еще не знает, как я выгляжу, - моя фотография:
-</p></center>
-<p><center>
-<img src="1.jpeg" width="250" height="250">
-</p></center>
-<hr>
-<center>
+</div>
+<h2><center> Для тех, кто еще не знает, как я выгляжу, - моя фотография:
+</h2></center>
+<div class="photos"> </div>
+<div class="content">
 Можете попробовать поискать информацию обо мне на 
 <a href="http://www.yahoo.com">Яндексе.</a>
 Надеюсь, что у Вас вышло
-<p> А вот я, когда закрыла сессию на 5:</p>
+<div class="content"> <center>
+<h2> А вот я, когда закрыла сессию на 5:</h2>
 <img src="3.gif">
-</center>
+</center> </div>
 </body>
 </html>
